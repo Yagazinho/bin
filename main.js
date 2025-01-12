@@ -4,12 +4,12 @@ function reverse(n){
     for(let i = 0; i < numArr.length; i++){
         reversed = numArr[i] + reversed;
     }
-    return reversed;
+    return parseInt(reversed) * Math.sign(n);
 }
 
-console.log(reverse(-49495));
+console.log(reverse(-30));
 let num = -23;
-console.log(num.Math.sign())
+console.log(Math.sign(num))
 // function reverse(str){
 //     let reversed = '';
 //     let strArr = str.split('');
