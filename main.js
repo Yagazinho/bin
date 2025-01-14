@@ -35,3 +35,28 @@ function isPangram(str){
     })
     return result;
 }
+
+const persistence = (num) => {
+    let count = 0;
+    while(num >= 10){
+        num = num.toString().split('').reduce((a,b) => a * b)
+        count++;
+    }
+    return count;
+}
+console.log(persistence(345));
+
+function isPalindrome(str) {
+    let reversed = str.split('').reverse().join('')
+    let result = false;
+    if (str === reversed) {
+        result = true;
+    }
+    return result;
+}
+
+
+function rev(str){
+    let revd = str.split('').reverse().join('');
+    return revd;
+}
