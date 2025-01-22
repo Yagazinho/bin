@@ -68,7 +68,7 @@ return function(){
 }
 }
 
-var createCounter = function(n){
-    let count = n;
-    return () => count++;
-}
+// var createCounter = function(n){
+//     let count = n;
+//     return () => count++;
+// }
