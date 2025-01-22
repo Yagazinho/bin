@@ -60,3 +60,10 @@ function rev(str){
     let revd = str.split('').reverse().join('');
     return revd;
 }
+
+var createCounter = function(n){
+console.log(n)
+return function(){
+    return n++;
+}
+}
